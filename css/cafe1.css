@@ -204,6 +204,11 @@ ul.products li .product-info .product-price{
         border-radius: 6px;
         animation: menu ease 0.7;
     }
+
+    .logo {
+        margin-left: 0px;
+    }
+
     .navbar-right{
         display: none;
     }
@@ -217,17 +222,18 @@ ul.products li .product-info .product-price{
     }
     .ten{
         position: absolute;
-        left: 40%;
+        left: 35%;
     }
    
 }
-@media screen and (min-width: 600px ) {
+@media screen and (min-width: 601px ) {
     #toggle{
         display: none;
         position: relative;
     }
     .ten{
         display: none;
+        margin-left: 10px;
     }
 }
 #toggle{
