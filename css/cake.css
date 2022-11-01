@@ -1,15 +1,13 @@
-/* 
-body{
-    margin: 0px;  
-    padding: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-image: url(https://images.unsplash.com/photo-1664736909263-2c735a6a9fb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-} */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main{
   background-image: url('../Images/background_all.png');
   background-size: 300px;
@@ -21,17 +19,6 @@ a:link, a:visited{
 }
 a:hover{
   color: #CA7939;
-}
-/* .link{
-  border-bottom: 1.5px dotted !important;
-  padding: 1.5%;
-  text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-} */
-body{
-  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .navbar {
   position: fixed;
@@ -47,7 +34,7 @@ body{
   background-color: #fff;
   box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(249,177,113,0.71);
   z-index: 5;
 }
 
@@ -120,7 +107,6 @@ body{
     margin-bottom: 15px;
 }
 .footer-list_item {
-  margin-left: -5px;
     align-items: center;
     /* margin:5px 5px 5px 5px; */
     line-height: 20px;
@@ -260,7 +246,7 @@ a {
   }
   .slick-dots {
     position: absolute;
-    bottom: 55px;
+    bottom: 25px;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex !important;
@@ -322,12 +308,21 @@ a {
   /* https://www.w3schools.com/css/css3_object-fit.asp */
   flex-shrink: 0;
   /* https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp */
-
+  display: block;
+  overflow: hidden;
 }
+.card-image img{
+  transition: all 0.3s ease-in-out;
+}
+.card-image img:hover{
+  transform: scale(1.1);
+}
+
 .card-top {
   padding-left: 20px;
   padding-right: 20px;
   text-align:center;
+  display: block;
 }
 .card-title {
   display: inline-block;
@@ -371,13 +366,14 @@ a {
 .buy-logo{
   padding-bottom: 2px;
   margin-left: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .buy-logo ion-icon{
   font-size : 48px ;
 }
 .buy-logo :hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
    cursor: pointer;
 }
 

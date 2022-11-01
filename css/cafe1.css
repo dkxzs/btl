@@ -27,6 +27,11 @@ html{
     z-index: 1l;
     background-color: #fff; 
 }
+
+.logo {
+    margin-left: 52px;
+}
+
  nav{
     text-align: center;
  }
@@ -59,9 +64,11 @@ html{
 .find-store:hover{
     color:#CA7939
 }
+
 .find-store{
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 a:link, a:visited{
     text-decoration: none;
