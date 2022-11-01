@@ -1,0 +1,92 @@
+@media (max-width: 739px) {
+
+    .flicker2 .animate{
+        width: 180px;
+        float: left;
+        margin-left: -194px !important;
+        margin-top: 22px !important;
+    }
+
+    .flicker2 .info {
+        margin-top: 12.4rem;
+    }
+
+    .content-products {
+        display: block;
+    }
+
+    .flicker1 {
+        display: inline;
+        float: left;
+    }
+
+    .flicker1 .animate {
+        width: 180px;
+        margin-left: -1px;
+    }
+
+    .flicker1 .info {
+        max-width: 200px;
+        margin-left: -3px;
+    }
+
+    .flicker2 {
+        display: inline;
+        position: relative;
+    }
+
+    .flicker2 .animate {
+        width: 180px;
+        margin-left: -1px;
+    }
+
+    .flicker2 .info {
+        max-width: 200px;
+        margin-left: 14px;
+    }
+
+    .flicker1 {
+        display: none;
+    }
+    
+    .content-item {
+        width: 50%;
+        float: left;
+    }
+
+    .animate {
+        display: inline-block;
+        width: 47%;
+        margin-left: 8px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 8px;
+        padding-bottom: 20px;
+    }
+
+    .footer-right {
+        position: relative;
+        margin-top: 240px;
+        margin-bottom: 5px;
+    }
+
+    .footer-right img {
+        width: 370px;
+        margin-top: -32px;
+        margin-left: -8px;
+    }
+
+    .footer-list_item {
+        padding-top: 0 !important;
+        margin-left: -2px;
+    }
+}

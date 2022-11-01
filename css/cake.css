@@ -1,0 +1,401 @@
+/* 
+body{
+    margin: 0px;  
+    padding: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1664736909263-2c735a6a9fb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  background-image: url('background_all.png');
+  background-size: 300px;
+}
+/* CSS PHAN HEADER */
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #CA7939;
+}
+/* .link{
+  border-bottom: 1.5px dotted !important;
+  padding: 1.5%;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+} */
+body{
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  height: 100px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
+  z-index: 5;
+}
+
+.navbar-left svg{
+  width: 50px;
+  margin-right: 50px;   
+}
+.navbar-left div{
+  text-transform: uppercase;
+  font-weight: 600;   
+}
+.navbar-left div:hover{
+  color: #CA7939;
+}
+.navbar-left{
+  display: flex;
+  align-items: center;      
+}
+.navbar-left > *{
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+.find-store:hover{
+  color:#CA7939
+}
+.find-store{
+  display: flex;
+  align-items: center;
+}
+.find-store:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.find{
+  font-weight: bold;
+}
+
+/* CSS PHAN FOOTER */
+.footer {
+    height: 200px;
+    padding: 0px;
+    position: relative;
+    /* padding-inline:200px; */
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.footer-left{
+  background-color: #000;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content:space-around;
+  top:0px;
+  left: 0px;
+  width: 75%;
+  height: 100%;
+}
+
+.footer-list {
+    list-style: none;
+     padding: 5px; /*để cho danh sách thẳng hàng với đề mục */
+}
+
+.row h3{
+    font-size: 20px;
+    margin-block: 10px;
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.footer-list_item {
+  margin-left: -5px;
+    align-items: center;
+    /* margin:5px 5px 5px 5px; */
+    line-height: 20px;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+}
+.footer-right{
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  right:0px;
+  background-color: #000;
+  padding: 20px;
+  object-fit: contain;
+}
+.footer-right img{
+  width: 270px;
+  height: 160px;
+}
+/* hết css phần footer */
+
+/* CSS PHAN SLIDER BANNER */
+a {
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    outline: none;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+  }
+  input {
+    line-height: normal;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  .image-slider {
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    padding-top: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+  }
+  
+  .image-item1 {
+    background-image: url('/Images/slider1.jpg');
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+  }
+  .image-item2 {
+    background-image: url('/Images/slider2.jpg');
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+  } .image-item3 {
+    background-image: url('/Images/slider3.jpg');
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+  } 
+
+  .image-title1 {
+    background-color: hsla(0, 0%, 0%, 0.0);
+    font-size: 40px;
+    color: #d9d9e0;
+    line-height: 60px;
+    font-family:'sans-serif','Tahoma','Verdana' ;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 5;
+  }
+  .image-title2 {
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.0);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode';
+    color: #d9d9e0;
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    z-index: 5;
+  }
+  .image-title3 {
+    background-color: hsla(0, 0%, 0%, 0.0);
+    font-size: 20px;
+    color: #d9d9e0;
+    position: absolute;
+    font-size: 30px;
+    font-family: sans-serif;
+    left: 10%;
+    top: 30%;
+    z-index: 5;
+  }
+  .slick-initialized .slick-slide {
+    margin: 0 10px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: hsla(0, 0%, 0%, 0.0);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(115, 120, 120);
+    line-height: 1;
+    z-index: 1;
+    transition: all 0.2s linear;
+  }
+  .slick-arrow:hover {
+    color: hsla(180, 22%, 92%, 0.821);
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  .slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+  }
+  .slick-dots .slick-active button {
+    background-color: #4e5456;
+  }
+
+  
+  /* cake-card lis */
+  
+.cards {
+  padding: 20px;
+  --spacing: 25px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+}
+@media screen and (max-width: 1023px) {
+  .cards {
+    --columns: 3;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards {
+    --spacing: 15px;
+    --columns: 1;
+  }
+}
+
+.card {
+  border-radius: 20px; 
+  overflow: hidden; /*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi.*/
+  background-color: white;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(77, 77, 102, 0.8) 0px 7px 29px 0px; 
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  /* https://www.w3schools.com/css/css3_object-fit.asp */
+  flex-shrink: 0;
+  /* https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp */
+
+}
+.card-top {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align:center;
+}
+.card-title {
+  display: inline-block;
+  font-weight: 600; 
+  font-size: 18px;
+  margin-bottom: 3px;
+  margin-top: 8px;
+  word-break: break-all;
+  /* tu dong ngat dong neu titlequa dai */
+  /* https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_word-break&preval=keep-all */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  /* cac dong tren de xu li doan title qua dai, 2 la so dong hien thi toi da */
+}
+.card-bottom {
+  padding: 5px;
+  border-top: 3px solid rgb(223, 218, 218);
+  display: flex;
+  justify-content: center;
+  /* https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_justify-content&preval=flex-start */
+  align-items: center;
+  background-color:#908887;
+}
+.card-price {
+  color: rgb(49, 44, 44);
+  display: flex;
+  align-items: center;
+  margin-right: 5px; /*de gia tien voi gia hang cach nhau mot doan*/
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #8f7c79;
+}
+.card-price span {
+  margin-left: 5px;
+  font-size: 30px;
+}
+.buy-logo{
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+
+.buy-logo ion-icon{
+  font-size : 48px ;
+}
+.buy-logo :hover{
+  transform: scale(1.3);
+   cursor: pointer;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
