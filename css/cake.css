@@ -11,7 +11,7 @@ body{
   box-sizing: border-box;
 }
 main{
-  background-image: url('background_all.png');
+  background-image: url('../Images/background_all.png');
   background-size: 300px;
 }
 /* CSS PHAN HEADER */
@@ -177,18 +177,18 @@ a {
   }
   
   .image-item1 {
-    background-image: url('/Images/slider1.jpg');
+    background-image: url('../Images/slider1.jpg');
     height: 500px;
     border-radius: 15px;
     position: relative;
   }
   .image-item2 {
-    background-image: url('/Images/slider2.jpg');
+    background-image: url('../Images/slider2.jpg');
     height: 500px;
     border-radius: 15px;
     position: relative;
   } .image-item3 {
-    background-image: url('/Images/slider3.jpg');
+    background-image: url('../Images/slider3.jpg');
     height: 500px;
     border-radius: 15px;
     position: relative;
