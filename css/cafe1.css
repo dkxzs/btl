@@ -5,16 +5,21 @@
 html{
     scroll-behavior: smooth;
 }
+.nav-img{
+    right: 20px;
+}
 .navbar {
+    position: relative;
     width: 100%;
     padding: 5px;
     font-size: 17px;
     display: flex;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(243, 220, 200, 0.71);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(249,177,113,0.71);
     position: fixed;
     top: 0;
     left: 0;
@@ -22,24 +27,34 @@ html{
     z-index: 1l;
     background-color: #fff; 
 }
-.navbar-left svg{
-    width: 50px;
-    margin-right: 50px;   
-}
+ nav{
+    text-align: center;
+ }
+
 .navbar-left div{
     text-transform: uppercase;
     font-weight: 600;   
 }
 .navbar-left div:hover{
-    color: #CA7939 !important;
+    color: #CA7939;
 }
 .navbar-left{
+    position: absolute;
     display: flex;
-    align-items: center;      
+    left: 20%;
+    top: 40%;
 }
 .navbar-left > *{
     padding-left: 15px; 
     padding-right: 15px;
+}
+.nav-img{
+    position: absolute;
+    left: 10%;
+}
+.navbar-right{
+    position: absolute;
+    left: 70%;
 }
 .find-store:hover{
     color:#CA7939
@@ -123,7 +138,6 @@ ul.products li .product-info .product-price{
     height: 200px;
     padding: 0px;
     position: relative;
-    /* padding-inline:200px; */
     margin-top: 0;
     margin-bottom: 0;
     overflow: hidden;
@@ -142,7 +156,6 @@ ul.products li .product-info .product-price{
 
 .footer-list {
     list-style: none;
-     padding: 5px; /*để cho danh sách thẳng hàng với đề mục */
 }
 
 .row h3{
@@ -153,9 +166,7 @@ ul.products li .product-info .product-price{
     margin-bottom: 15px;
 }
 .footer-list_item {
-    margin-left: -5px;
     align-items: center;
-    /* margin:5px 5px 5px 5px; */
     line-height: 20px;
     font-size: 13px;
     font-family: 'Lato', sans-serif;
@@ -173,7 +184,6 @@ ul.products li .product-info .product-price{
   width: 270px;
   height: 160px;
 }
-
 @media screen and (max-width: 600px ) {
     .navbar-left{
         width: 150px;
@@ -219,7 +229,9 @@ ul.products li .product-info .product-price{
     left: 90%;
     cursor: pointer;
 }
-
+.navbar-left div:hover{
+    color: #CA7939 !important;
+}
 .ten p{
     font-size: 30px;
     font-weight: 600;
